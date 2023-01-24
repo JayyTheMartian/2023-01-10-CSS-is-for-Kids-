@@ -1,0 +1,142 @@
+<!--
+CSS is for Kids!
+
+Purpose
+We want to combine and practice all we're learning about HTML, basic CSS, and advanced CSS.
+
+Task
+Fork this repo and create an online children's popup book. Start with static visuals: styled elements, images, Materialize components. Then, using advanced CSS concepts like pseudo selectors, transitions, and animations, make the site interactive! The story and content are up to you; you can make one up or borrow an existing one.
+
+Note: you can include the Materialize CSS library if you want to. It provides a shortcut to beautiful components.
+
+Requirements
+1. Fork this repo
+2. Have multiple HTML pages
+3. No Javascript; we want you to explore the possibilities of CSS
+-->
+<!--
+ideas:
+
+last updated:2:58am
+using green eggs and ham story
+add images to html after draggin them into files (checked)
+learn how to add images from gallery/files (checked @1:24am)
+learn about pages now that the images are applied when you run it
+on each page make it look like a page from a book(checked @2:43pm)
+-label the number of the page on the bottom left and bottom right(checked sort of)
+
+-put each page in a border and add a button on the bottom left and right to go to previous or next page instead of hyperlink. replace **** page with next page for a button.
+
+-for page 4 going forward, add a "go back to page ***" button and align it on the left side. Align "go to next page" to the right as a button
+
+
+-be more descriptive on html pages
+-materialize grid
+grid/container
+
+-while going to previous/next page add a nice transition
+
+get creative!! / add more color to each button and/or word
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<style>
+body {
+  background-image: url('KindergartenBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  /*scale: 1 0.5;*/
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html">Page 1</a>
+<br>
+
+<center>   
+<div class='container'>
+    <div class='row'>
+        <div class='col s6 push-s3'>
+    <img 
+    class="responsive-img MyImage" src="DoYouLikeGreenEggsAndHam.jpeg"
+    
+    />
+        </div>
+    </div>
+</div>
+</center> 
+<br>
+    
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+    
+<a class="waves-effect waves-light btn-large" href="2ndpage.html"> Go to the next page (page 2)</a>
+<class="z-depth-2" class>
+<br>
+<!--
+<a href="2ndpage.html">Go to Second Page</a>
+-->
+</ul>
+ <!--   
+<img 
+    class="responsive-img" src="FallingDown.jpeg"
+    />
+<a href="3rdpage.html">ThirdPage</a>
+    
+<img 
+    class="responsive-img" src="AlmostHittingTheWater.jpeg"
+    />
+<a href="4thpage.html">FourthPage</a>
+    
+<img 
+    class="responsive-img" src="InsideTheWater.jpeg"
+    />
+<a href="5thpage.html">FifthPage</a>
+    
+<img 
+    class="responsive-img" src="TryTheseGreenEggsAndHam.jpeg"
+    />
+<a href="6thpage.html">SixPage</a>  
+    
+<img 
+    class="responsive-img" src="IllGiveThemAtry.jpeg"
+    />
+-->
+    
+<!--    
+ <div class='Human_1' id='Justin'>
+  
+  Justin
+</div>
+
+<div class='Human_2' id='Joshua'>
+  
+  Joshua
+</div>
+
+<div class='Human_3' id='Jordan'>
+  
+  Jordan (Cashier)
+</div>
+  <script src="script.js"></script>
+-->
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
